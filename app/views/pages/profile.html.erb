@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>Gender</th>
+            <th>Homeworld</th> 
+        </tr>
+    </thead>
+    <tbody> 
+        <% @characters.each do |characters| %>
+        <tr>
+            <td><%= characters["name"] %></td>
+            <td><%= image_tag characters["image"] %></td> 
+            <td><%= characters["gender"] %></td>
+            <td><%= characters["homeworld"] %></td>
+        </tr> 
+        <% end %> 
+    </tbody>
+</table>
